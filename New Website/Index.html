@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ShopTrend - Your favorite online marketplace">
+  <title>ShopTrend - Online Shopping</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Skip to Content Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header Section -->
+  <header class="main-header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="/" aria-label="ShopTrend Home">
+          <span class="logo-icon">ST</span>
+          <span class="logo-text">ShopTrend</span>
+        </a>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="search-container">
+        <form role="search" aria-label="Site search">
+          <input type="search" id="search-input" placeholder="Search for products..." aria-label="Search products">
+          <button type="submit" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <div class="search-suggestions" id="search-suggestions" aria-hidden="true"></div>
+      </div>
+
+      <!-- User Actions -->
+      <div class="user-actions">
+        <a href="#" class="account-link" aria-label="Account">
+          <i class="fas fa-user"></i>
+          <span>Account</span>
+        </a>
+        <a href="#" class="cart-link" aria-label="Cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Cart</span>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="mobile-menu-toggle" aria-expanded="false" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-list">
+        <li><a href="#" class="nav-link">Electronics</a></li>
+        <li><a href="#" class="nav-link">Fashion</a></li>
+        <li><a href="#" class="nav-link">Home & Kitchen</a></li>
+        <li><a href="#" class="nav-link">Beauty</a></li>
+        <li><a href="#" class="nav-link">Toys</a></li>
+        <li><a href="#" class="nav-link">Grocery</a></li>
+        <li><a href="#" class="nav-link">Deals</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Theme Toggle Sidebar -->
+  <aside class="theme-sidebar" aria-label="Theme switcher">
+    <button class="theme-toggle" aria-label="Toggle theme">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+    </button>
+  </aside>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Carousel -->
+    <section class="hero-carousel" aria-label="Featured products">
+      <div class="carousel-container">
+        <div class="carousel-slides">
+          <div class="carousel-slide active" aria-hidden="false">
+            <img src="https://via.placeholder.com/1200x400/008080/FFFFFF?text=Summer+Sale" alt="Summer Sale - Up to 50% off" loading="lazy">
+            <div class="slide-content">
+              <h2>Summer Sale</h2>
+              <p>Up to 50% off on selected items</p>
+              <button class="shop-now">Shop Now</button>
+            </div>
+          </div>
+          <div class="carousel-slide" aria-hidden="true">
+            <img src="https://via.placeholder.com/1200x400/FF6F61/FFFFFF?text=New+Arrivals" alt="New Arrivals - Latest fashion trends" loading="lazy">
+            <div class="slide-content">
+              <h2>New Arrivals</h2>
+              <p>Discover the latest fashion trends</p>
+              <button class="shop-now">Shop Now</button>
+            </div>
+          </div>
+          <div class="carousel-slide" aria-hidden="true">
+            <img src="https://via.placeholder.com/1200x400/5F4B8B/FFFFFF?text=Tech+Week" alt="Tech Week - Best deals on electronics" loading="lazy">
+            <div class="slide-content">
+              <h2>Tech Week</h2>
+              <p>Best deals on electronics</p>
+              <button class="shop-now">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-prev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-next" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+        <div class="carousel-indicators">
+          <button class="indicator active" aria-label="Slide 1"></button>
+          <button class="indicator" aria-label="Slide 2"></button>
+          <button class="indicator" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deal of the Day -->
+    <section class="product-section" aria-labelledby="deal-of-the-day">
+      <div class="section-header">
+        <h2 id="deal-of-the-day">Deal of the Day</h2>
+        <a href="#" class="view-all">View All</a>
+      </div>
+      <div class="product-carousel" data-carousel="deal">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200x200/008080/FFFFFF?text=Product+1" alt="Wireless Headphones" loading="lazy">
+          <h3>Wireless Headphones</h3>
+          <div class="price">₹1,299 <span class="original-price">₹2,499</span></div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>(124)</span>
+          </div>
+        </div>
+        <!-- More product cards... -->
+      </div>
+    </section>
+
+    <!-- Trending Now -->
+    <section class="product-section" aria-labelledby="trending-now">
+      <div class="section-header">
+        <h2 id="trending-now">Trending Now</h2>
+        <a href="#" class="view-all">View All</a>
+      </div>
+      <div class="product-carousel" data-carousel="trending">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200x200/FF6F61/FFFFFF?text=Product+2" alt="Smart Watch" loading="lazy">
+          <h3>Smart Watch</h3>
+          <div class="price">₹3,999</div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <span>(89)</span>
+          </div>
+        </div>
+        <!-- More product cards... -->
+      </div>
+    </section>
+
+    <!-- Recommended for You -->
+    <section class="product-section" aria-labelledby="recommended">
+      <div class="section-header">
+        <h2 id="recommended">Recommended for You</h2>
+        <a href="#" class="view-all">View All</a>
+      </div>
+      <div class="product-carousel" data-carousel="recommended">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200x200/5F4B8B/FFFFFF?text=Product+3" alt="Bluetooth Speaker" loading="lazy">
+          <h3>Bluetooth Speaker</h3>
+          <div class="price">₹1,599</div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(215)</span>
+          </div>
+        </div>
+        <!-- More product cards... -->
+      </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="product-grid" aria-labelledby="featured-products">
+      <h2 id="featured-products">Featured Products</h2>
+      <div class="grid-container">
+        <!-- Product cards will be populated here -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer" aria-label="Footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Returns & Refunds</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Policies</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Accessibility</a></li>
+        </ul>
+      </div>
+      <div class="footer-section newsletter">
+        <h3>Stay Updated</h3>
+        <p>Subscribe to our newsletter for the latest deals</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+          <button type="submit">Subscribe</button>
+        </form>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 ShopTrend. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="scripts/carousel.js" defer></script>
+  <script src="scripts/menu.js" defer></script>
+  <script src="scripts/theme-toggle.js" defer></script>
+</body>
+</html>

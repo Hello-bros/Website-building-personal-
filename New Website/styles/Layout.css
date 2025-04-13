@@ -1,0 +1,66 @@
+/* Base Layout Styles */
+:root {
+  --primary-color: #008080; /* Teal */
+  --secondary-color: #FF6F61; /* Coral */
+  --accent-color: #5F4B8B; /* Purple */
+  --light-color: #FFFFFF;
+  --dark-color: #333333;
+  --gray-light: #F5F5F5;
+  --gray-medium: #E0E0E0;
+  --gray-dark: #757575;
+  --font-primary: 'Poppins', sans-serif;
+  --transition-speed: 0.3s;
+}
+
+/* Dark Theme Variables */
+[data-theme="dark"] {
+  --light-color: #222222;
+  --dark-color: #F5F5F5;
+  --gray-light: #333333;
+  --gray-medium: #444444;
+  --gray-dark: #AAAAAA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+  line-height: 1.6;
+}
+
+/* Skip Link for Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--primary-color);
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Container Styles */
+.header-container,
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Main Content Area */
+main {
+  padding: 20px 0;
+  min-height: 70vh;
+}
